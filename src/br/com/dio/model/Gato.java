@@ -16,7 +16,6 @@ public class Gato {
 	}
 
 	public Gato() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

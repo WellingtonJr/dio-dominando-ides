@@ -1,33 +1,25 @@
 package br.com.dio;
 
-import java.util.Scanner;
-
-import br.com.dio.model.Gato;
+import br.com.dio.Collections.Lists.EstudoList;
+import br.com.dio.Collections.Lists.ListExProposto1;
+import br.com.dio.Collections.Lists.ListExProposto2;
+import br.com.dio.Collections.Set.EstudoSet;
+import br.com.dio.Collections.Set.SetExProposto1;
+import br.com.dio.Collections.Set.SetExProposto2;
 
 public class PrimeiroPrograma {
 
 	public static void main(String[] args) {
-		Gato gato = new Gato("a","b",2);
-		Livros livros = new Livros();
-		
-		System.out.println("Informe dois numeros:" );
-		
-		Scanner scanner = new Scanner(System.in);;
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
-		
-		float divisao = divisao(a,b);
-		System.out.println(divisao);
-	}
-	
-	
-	public static float divisao(int a, int b) {
-		return  (float)a / (float)b;
-	}
-}
 
-class Livros{
-	private String nome;
-	private String npag;
-	
+		// EstudoList.printaEstudoList(); // ESTUDO LIST 
+		// ListExProposto1.rodarExProposto1();
+		// ListExProposto2.rodarExProposto2();
+		
+		// EstudoSet.printaEstudoSet(); // ESTUDO SET 
+		// SetExProposto1.rodarSetExProposto1();
+		SetExProposto2.rodarSetExProposto2();
+
+
+	}
+
 }
