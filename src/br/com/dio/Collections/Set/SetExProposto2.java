@@ -1,9 +1,12 @@
 package br.com.dio.Collections.Set;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -41,7 +44,14 @@ public class SetExProposto2 {
             System.out.println(linguagemFavorita);
         }
 
+        List<LinguagemFavorita> linguagemFavoritaList = new ArrayList<>(linguagemFavoritaSet);
         //c
+        Collections.sort(linguagemFavoritaList, new ComparatorIDE());
+        System.out.println(linguagemFavoritaList);
+
+        //d
+        Collections.sort(linguagemFavoritaList,new ComparatorAnoCriacaoNome());
+        System.out.println(linguagemFavoritaList);
 
     }
 
@@ -124,6 +134,27 @@ class LinguagemFavorita implements Comparable<LinguagemFavorita> {
     @Override
     public int compareTo(LinguagemFavorita linguagemFavorita) {
         return this.getNome().compareToIgnoreCase(linguagemFavorita.getNome());
+    }
+
+}
+
+class ComparatorIDE implements Comparator<LinguagemFavorita>{
+
+    @Override
+    public int compare(LinguagemFavorita l1, LinguagemFavorita l2) {
+        return l1.getIde().compareToIgnoreCase(l2.getIde());
+    }
+    
+}
+
+class ComparatorAnoCriacaoNome implements Comparator<LinguagemFavorita>{
+
+    @Override
+    public int compare(LinguagemFavorita l1, LinguagemFavorita l2) {
+        int anoCriacao = Integer.compare(l1.getAnoDeCriacao(), l2.getAnoDeCriacao());
+        if (anoCriacao != 0 ) return anoCriacao;
+
+        return l1.getNome().compareToIgnoreCase(l2.getNome());
     }
 
 }

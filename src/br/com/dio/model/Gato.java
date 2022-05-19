@@ -20,7 +20,7 @@ public class Gato {
 
 	@Override
 	public String toString() {
-		return "Gato [nome=" + nome + ", cor=" + cor + ", idade=" + idade + "]";
+		return " [nome=" + nome + ", cor=" + cor + ", idade=" + idade + "]";
 	}
 
 	public String getNome() {

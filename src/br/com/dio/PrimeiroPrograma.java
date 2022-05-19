@@ -3,6 +3,8 @@ package br.com.dio;
 import br.com.dio.Collections.Lists.EstudoList;
 import br.com.dio.Collections.Lists.ListExProposto1;
 import br.com.dio.Collections.Lists.ListExProposto2;
+import br.com.dio.Collections.Map.EstudoMap;
+import br.com.dio.Collections.Map.ExemploOrdenacaoMap;
 import br.com.dio.Collections.Set.EstudoSet;
 import br.com.dio.Collections.Set.SetExProposto1;
 import br.com.dio.Collections.Set.SetExProposto2;
@@ -17,7 +19,10 @@ public class PrimeiroPrograma {
 		
 		// EstudoSet.printaEstudoSet(); // ESTUDO SET 
 		// SetExProposto1.rodarSetExProposto1();
-		SetExProposto2.rodarSetExProposto2();
+		// SetExProposto2.rodarSetExProposto2();
+
+		// EstudoMap.printaEstudoMap();
+		// ExemploOrdenacaoMap
 
 
 	}
